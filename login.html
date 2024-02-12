@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <meta name="description" content="Logowanie użytkownika">
+    <meta name="keywords" content="rejestracja, użytkownik, formularz">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Logowanie</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+    </nav>
+
+    <section class="main-content">
+        <form id="login-form" onsubmit="return login()">
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Zaloguj się</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === '' || password === '') {
+                alert('Wypełnij oba pola przed zalogowaniem.');
+                return false;
+            }
+
+            window.location.replace('indexadmin.html');
+            return false;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

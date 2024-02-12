@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona informacyjna</title>
+    <meta name="description" content="Informacje o przeglądarce i użytkowniku">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Strona informacyjna</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article>
+            <p>Nazwa i wersja przeglądarki: Wersja 121.0.6167.86 (Oficjalna wersja) (64-bitowa)</p>
+            <p>Imię: Paweł</p>
+            <p>Nazwisko: Żurawski</p>
+            <p>Numer albumu: 371927</p>
+            <p>Nazwa przedmiotu: Podstawy technologii internetowych</p>
+            <p>Rok akademicki: 2023/2024.</p>
+        </article>
+        <article>
+            <div class="box">
+                <p>Specyfikacja Projektowa</p>
+                <a href="SpecyfikacjaProjektowaŻurawski.docx" download="SpecyfikacjaProjektowaŻurawski.docx">Pobierz specyfikację projektową</a>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

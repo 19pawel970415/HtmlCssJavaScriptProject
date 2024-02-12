@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracja Dyskusjami</title>
+    <meta name="description" content="Administracja dyskusjami na temat Tatr.">
+    <meta name="keywords" content="Tatry, dyskusje, forum, administracja">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Administracja Dyskusjami</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="discussion-topic" id="discussion-1">
+            <h3>Wspinaczka poza szlakiem - odwaga czy szaleństwo?</h3>
+            <button class="edit-button" onclick="editDiscussion(1)">Zarządzaj komentarzami dyskusji</button>
+            <button class="delete-button" onclick="deleteDiscussion(1)">Usuń dyskusję</button>
+        </div>
+    
+        <div class="discussion-topic" id="discussion-2">
+            <h3>Zima w Tatrach - must have poniżej 0 st. Celsjusza!</h3>
+            <button class="edit-button" onclick="editDiscussion(2)">Zarządzaj komentarzami dyskusji</button>
+            <button class="delete-button" onclick="deleteDiscussion(2)">Usuń dyskusję</button>
+        </div>
+    
+        <div class="discussion-topic" id="discussion-3">
+            <h3>Darmowa pomoc TOPR - czy należy zmienić status quo?</h3>
+            <button class="edit-button" onclick="editDiscussion(3)">Zarządzaj komentarzami dyskusji</button>
+            <button class="delete-button" onclick="deleteDiscussion(3)">Usuń dyskusję</button>
+        </div>
+    </section>
+    
+    <div id="discussion-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Edytuj dyskusję</h2>
+            <div id="discussion-content"></div>
+            <div class="comment-buttons">
+                <button onclick="deleteComment()">Usuń komentarz</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

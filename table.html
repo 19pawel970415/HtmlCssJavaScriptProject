@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Najwyższe Szczyty</title>
+    <meta name="description" content="Lista najwyższych szczytów Polskich Tatr.">
+    <meta name="keywords" content="Tatry, szczyty, Polskie Tatry">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>10 Najwyższych Szczytów polskich Tatr</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Szczyt</th>
+                    <th>Wysokość (m n.p.m.)</th>
+                    <th>Czytaj więcej</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rysy</td>
+                    <td>2499</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Rysy" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mięguszowiecki Szczyt</td>
+                    <td>2438</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Mi%C4%99guszowiecki_Szczyt" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Niżnie Rysy</td>
+                    <td>2430</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Ni%C5%BCnie_Rysy" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mięguszowiecki Szczyt Czarny</td>
+                    <td>2410</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Mi%C4%99guszowiecki_Szczyt_Czarny" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mięguszowiecki Szczyt Pośredni</td>
+                    <td>2393</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Mi%C4%99guszowiecki_Szczyt_Po%C5%9Bredni" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cubryna</td>
+                    <td>2376</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Cubryna" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wołowa Turnia</td>
+                    <td>2373</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Wo%C5%82owa_Turnia" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hińczowa Turnia</td>
+                    <td>2372</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Hi%C5%84czowa_Turnia" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Żabia Turnia Mięguszowiecka</td>
+                    <td>2336</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/%C5%BBabia_Turnia_Mi%C4%99guszowiecka" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Świnica</td>
+                    <td>2301</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/%C5%9Awinica" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showDetails(szczyt) {
+            alert('Szczegóły dla szczytu: ' + szczyt);
+        }
+    </script>
+</body>
+
+</html>

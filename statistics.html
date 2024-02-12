@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statystyki</title>
+    <meta name="description" content="Statystyki strony">
+    <meta name="keywords" content="statystyki, odwiedziny, użytkownicy, posty">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Statystyki serwisu</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="statistics-container">
+            <canvas id="dailyVisitsChart"></canvas>
+            <canvas id="userActivityChart"></canvas>
+            <canvas id="userStatsChart"></canvas>
+            <canvas id="postStatsChart"></canvas>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        var dailyVisitsData = [50, 120, 80, 150, 100, 200, 120];
+        var userActivityData = [20, 40, 30, 60, 45, 80, 55];
+        var userStatsData = [100, 150, 200, 180, 220, 250, 210];
+        var postStatsData = [10, 15, 8, 12, 20, 18, 14];
+
+        var dailyVisitsChart = new Chart(document.getElementById('dailyVisitsChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Dzienna liczba odwiedzin',
+                    data: dailyVisitsData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var userActivityChart = new Chart(document.getElementById('userActivityChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Aktywność użytkowników',
+                    data: userActivityData,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var userStatsChart = new Chart(document.getElementById('userStatsChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Liczba użytkowników',
+                    data: userStatsData,
+                    backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                    borderColor: 'rgba(255, 206, 86, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var postStatsChart = new Chart(document.getElementById('postStatsChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Liczba postów',
+                    data: postStatsData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

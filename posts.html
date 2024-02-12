@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Dyskusje</title>
+    <meta name="description" content="Dyskusje na temat Tatr.">
+    <meta name="keywords" content="Tatry, dyskusje, forum">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Forum</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div id="discussion-modal" class="discussion-modal" style="display: none;">
+            <div class="close-button" onclick="closeDiscussion()">×</div>
+            <div class="discussion-content" id="discussion-content">
+            </div>
+            <textarea id="new-comment" rows="2" placeholder="Dodaj nowy komentarz"></textarea>
+            <div class="comment-buttons">
+                <button onclick="addComment()">Dodaj komentarz</button>
+            </div>
+        </div>
+
+        <div class="discussion-topic" onclick="openDiscussion('discussion1')">
+            <h3>Wspinaczka poza szlakiem - odwaga czy szaleństwo?</h3>
+        </div>
+
+        <div class="discussion-topic" onclick="openDiscussion('discussion2')">
+            <h3>Zima w Tatrach - must have poniżej 0 st. Celsjusza!</h3>
+        </div>
+
+        <div class="discussion-topic" onclick="openDiscussion('discussion3')">
+            <h3>Darmowa pomoc TOPR - czy należy zmienić status quo?</h3>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

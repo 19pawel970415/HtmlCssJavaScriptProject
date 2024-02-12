@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Kontakt</title>
+    <meta name="description" content="Skontaktuj się z nami, jeśli masz pytania lub uwagi dotyczące Tatr.">
+    <meta name="keywords" content="Tatry, kontakt, e-mail, telefon">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Kontakt</h1>
+        <p>Skontaktuj się z nami, jeśli masz pytania lub uwagi.</p>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article class="contact-info">
+            <h2>Nasz e-mail:</h2>
+            <p>kontakt@tatry.com</p>
+        </article>
+        <article class="contact-info">
+            <h2>Numer telefonu:</h2>
+            <p>123-456-789</p>
+        </article>
+
+        <article class="contact-form">
+            <h2>Napisz do nas</h2>
+            <form action="#" method="post">
+                <label for="email">Twój e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Twoja wiadomość:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Wyślij</button>
+            </form>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

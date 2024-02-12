@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracja</title>
+    <meta name="description" content="Administracja użytkownikami">
+    <meta name="keywords" content="użytkownicy, edycja, usuwanie">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="usersadmin.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Administracja</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="user-list">
+            <div class="user" id="user-1">
+                <h3>MountainExplorer</h3>
+                <p>Email: user1@example.com</p>
+                <p>Telefon: 123-456-789</p>
+                <button onclick="editUser(1)">Edytuj</button>
+                <button onclick="deleteUser(1)">Usuń</button>
+            </div>
+
+            <div class="user" id="user-2">
+                <h3>WinterAdventurer</h3>
+                <p>Email: user2@example.com</p>
+                <p>Telefon: 987-654-321</p>
+                <button onclick="editUser(2)">Edytuj</button>
+                <button onclick="deleteUser(2)">Usuń</button>
+            </div>
+
+            <div class="user" id="user-3">
+                <h3>RescueSupporter</h3>
+                <p>Email: user3@example.com</p>
+                <p>Telefon: 231-421-022</p>
+                <button onclick="editUser(3)">Edytuj</button>
+                <button onclick="deleteUser(3)">Usuń</button>
+            </div>
+        </div>
+
+        <div id="editUserModal" class="modal">
+            <div class="modal-content">
+                <h2>Edytuj użytkownika</h2>
+                <form id="edit-user-form">
+                    <label for="edit-name">Nowe Imię:</label>
+                    <input type="text" id="edit-name" name="edit-name" required>
+    
+                    <label for="edit-surname">Nowe Nazwisko:</label>
+                    <input type="text" id="edit-surname" name="edit-surname" required>
+    
+                    <label for="edit-email">Nowy Adres email:</label>
+                    <input type="email" id="edit-email" name="edit-email" required>
+    
+                    <label for="edit-phone">Nowy Telefon:</label>
+                    <input type="tel" id="edit-phone" name="edit-phone" required>
+    
+                    <label for="edit-photo">Nowe Zdjęcie (URL):</label>
+                    <input type="text" id="edit-photo" name="edit-photo" required>
+    
+                    <label for="edit-bio">Nowa sekcja "O mnie":</label>
+                    <textarea id="edit-bio" name="edit-bio" required></textarea>
+    
+                    <div class="modal-buttons">
+                        <button type="button" onclick="saveEditUser()">Zapisz</button>
+                        <button type="button" onclick="closeEditUserModal()">Anuluj</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="usersadmin.js"></script>
+</body>
+
+</html>
