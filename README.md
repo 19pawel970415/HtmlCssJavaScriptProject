@@ -1,1 +1,2 @@
-﻿# This is a fully documented HTML, CSS, JavaScript project. Documentation is attached in a docx file.
+﻿# This is a front end project of a Tatras fan site being a part of the University of Lodz Frontend Technologies course.
+Documentation - SpecyfikacjaProjektowa.txt file. 
