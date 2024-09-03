@@ -1,6 +1,6 @@
 ﻿# This is a front end project of a Tatras fan site being a part of the University of Lodz Frontend Technologies course.
 
-# Project Documentation for Tatrofan
+# Tatrofan - a Tatras fan site
 
 ## 1. Project Objective
 Create an interactive website for discovering interesting facts and participating in discussions about the Tatras on the user side, and for viewing site statistics, and managing users, contact data, and discussions on the admin side.
@@ -805,7 +805,718 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The sidebar menu allows navigation through different sections of the site.
 - After filling out the login form, users can submit their data, and the JavaScript `login()` function will redirect to `indexadmin.html` if the data is correct.
 
-### 3.2 Backend
+#### 3.1.7 styles.css
+
+```css
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.toggle-btn {
+    font-size: 20px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar li {
+    padding: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-photo {
+    width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+        width: 100%;
+    }
+    nav a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .sidebar li {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+.contact-info,
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contact-info p,
+.contact-form label,
+.contact-form textarea,
+.contact-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-info p {
+    font-size: 16px;
+}
+
+.contact-form input[type="email"] {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-form input[type="email"] {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.home-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.home-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    z-index: 100;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.details-btn {
+    color: #555;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.discussion-topic {
+    border: 2px solid #3366cc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.discussion-topic h3 {
+    color: #3366cc;
+    margin-bottom: 10px;
+}
+
+.discussion-topic img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.discussion-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.discussion-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-date {
+    color: #888;
+}
+
+.comment-content {
+    line-height: 1.5;
+}
+
+#new-comment {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-buttons button {
+    margin-top: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.discussion-topic {
+    border: 2px solid #3366cc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.discussion-topic:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#register-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#login-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#edit-profile-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#editUserModal {
+    max-width: 400px;
+    margin: auto;
+}
+
+#edit-contact-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3366cc;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #254785;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+#bio {
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#new-bio {
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#edit-bio {
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.user {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.user img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #3366cc;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #254785;
+}
+```
+
+#### Global Styles
+
+##### Reset Margins and Padding
+- **Elements:** `body`, `h1`, `h2`, `p`, `ul`, `li`
+- **Values:** Margin and padding set to `0`.
+
+##### `body` Styles
+- **Font Family:** 'Arial', sans-serif.
+- **Background Color:** Light gray (`#f4f4f4`).
+- **Overflow:** Horizontal overflow hidden.
+
+##### `header` Styles
+- **Background Color:** Dark gray (`#333`).
+- **Text Color:** White (`#fff`).
+- **Text Alignment:** Centered.
+- **Padding:** 20px around the content.
+
+##### `.sidebar` Styles
+- **Position:** Fixed, full height.
+- **Width:** Initially `0`, expands on interaction.
+- **Background Color:** Dark gray (`#333`).
+- **Transition:** Smooth width change (`0.5s`).
+- **Padding:** 60px from the top.
+
+##### `.toggle-btn` Styles
+- **Font Size:** 20px.
+- **Position:** Fixed, top-left corner (`20px`).
+- **Background and Border:** None.
+- **Text Color:** White (`#fff`).
+- **Cursor:** Pointer.
+
+##### `.sidebar ul` Styles
+- **Padding and Margin:** Both set to `0`.
+- **List Style:** None (no bullet points).
+- **Text Alignment:** Centered.
+
+##### `.sidebar li` Styles
+- **Padding:** 15px around each item.
+
+##### `.sidebar a` Styles
+- **Text Decoration:** None.
+- **Font Size:** 18px.
+- **Color:** White (`#fff`).
+- **Display:** Block level.
+- **Transition:** Smooth color and background changes (`0.3s`).
+
+##### `.sidebar a:hover` Styles
+- **Background Color:** Light gray (`#ddd`).
+- **Text Color:** Black.
+
+##### `.main-photo` Styles
+- **Width:** 100% of container.
+- **Max Height:** 400px.
+- **Margin:** Centered horizontally.
+
+##### `.main-content` Styles
+- **Padding:** 20px around the content.
+- **Text Alignment:** Centered.
+
+##### `article` Styles
+- **Margin Bottom:** 20px.
+
+##### `footer` Styles
+- **Position:** Fixed at the bottom.
+- **Background Color:** Dark gray (`#333`).
+- **Text Color:** White (`#fff`).
+- **Text Alignment:** Centered.
+- **Padding:** 10px.
+
+#### Media Query (`@media screen and (max-width: 600px)`)
+
+##### `nav li` Styles
+- **Float:** None.
+- **Width:** 100%.
+
+##### `nav a` Styles
+- **Width:** 100%.
+- **Box-Sizing:** Border-box.
+
+##### `.sidebar li` Styles
+- **Text Alignment:** Left.
+- **Padding Left:** 20px.
+
+#### `.contact-info` and `.contact-form` Styles
+
+##### `.contact-info` Styles
+- **Background Color:** White (`#fff`).
+- **Padding:** 20px.
+- **Margin Bottom:** 20px.
+
+##### `.contact-info h2` Styles
+- **Text Alignment:** Left.
+- **Margin Bottom:** 10px.
+- **Font Size:** 24px.
+
+##### `.contact-info p` Styles
+- **Font Size:** 16px.
+
+##### `.contact-form` Styles
+- **Background Color:** White (`#fff`).
+- **Padding:** 20px.
+- **Margin Bottom:** 20px.
+
+##### `.contact-form label`, `.contact-form textarea`, `.contact-form input` Styles
+- **Display:** Block.
+- **Width:** 100%.
+- **Margin Bottom:** 10px.
+- **Font Size:** 18px.
+
+##### `.contact-form input[type="email"]` Styles
+- **Width:** 25%.
+- **Margin:** Centered.
+
+#### `.home-icon` Styles
+
+##### `.home-icon img` Styles
+- **Width and Height:** 40px each.
+
+##### `.home-icon` Styles
+- **Position:** Fixed at the top-right corner.
+- **Font Size:** 30px.
+- **Color:** White (`#fff`).
+- **Text Decoration:** None.
+
+#### `.footer` Styles
+- **Positioning:** Sticky at the bottom.
+- **Background Color:** Dark gray (`#333`).
+- **Text Color:** White (`#fff`).
+- **Text Alignment:** Centered.
+- **Padding:** 10px.
+- **Overflow-x:** Hidden.
+- **Z-index:** 100.
+
+#### `table` Styles
+- **Width:** 80% of container.
+- **Margin:** Centered horizontally.
+
+##### `th`, `td` Styles
+- **Padding:** 10px.
+- **Text Alignment:** Left.
+
+##### `th` Styles
+- **Background Color:** Dark gray (`#333`).
+- **Text Color:** White (`#fff`).
+
+#### `.details-btn` Styles
+- **Color:** Dark gray (`#555`).
+- **Text Decoration:** None.
+- **Font Size:** 20px.
+
+#### `.discussion-topic` Styles
+
+##### `.discussion-topic` Base Styles
+- **Border:** 2px solid blue (`#3366cc`).
+- **Border Radius:** 8px.
+- **Margin Bottom:** 20px.
+- **Padding:** 10px.
+- **Cursor:** Pointer.
+
+##### `.discussion-topic:hover` Styles
+- **Background Color:** Light gray (`#f0f0f0`).
+
+#### `.discussion-modal` Styles
+- **Display:** None (hidden by default).
+- **Positioning:** Fixed, covering full viewport.
+- **Background Color:** Semi-transparent black (`rgba(0, 0, 0, 0.8)`).
+- **Padding Top:** 60px.
+- **Box Sizing:** Border-box.
+
+##### `.discussion-content` Styles
+- **Background Color:** White (`#fefefe`).
+- **Margin:** Centered (5% from top).
+- **Padding:** 20px.
+- **Border:** 1px solid gray (`#888`).
+- **Width:** 80% of viewport.
+
+#### `.comment` Styles
+
+##### `.comment` Base Styles
+- **Margin Bottom:** 20px.
+- **Padding:** 15px.
+- **Border:** 1px solid light gray (`#ddd`).
+- **Border Radius:** 8px.
+
+##### `.comment-header` Styles
+- **Display:** Flex.
+- **Justify Content:** Space between.
+- **Margin Bottom:** 10px.
+
+##### `.comment-author` Styles
+- **Font Weight:** Bold.
+
+##### `.comment-date` Styles
+- **Color:** Gray (`#888`).
+
+##### `.comment-content` Styles
+- **Line Height:** 1.5.
+
+##### `#new-comment` Styles
+- **Width:** 80%.
+- **Padding:** 10px.
+- **Margin Bottom:** 10px.
+
+##### `.comment-buttons` Styles
+- **Display:** Flex.
+- **Flex Direction:** Column.
+- **Align Items:** Center.
+
+##### `.comment-buttons button` Styles
+- **Margin Top:** 10px.
+
+##### `.close-button` Styles
+- **Positioning:** Absolute, top-right corner.
+- **Font Size:** 20px.
+- **Color:** Red (`#ff0000`).
+- **Cursor:** Pointer.
+
+#### `#register-form`, `#login-form`, `#edit-profile-form`, `#editUserModal`, `#edit-contact-form` Styles
+- **Max Width:** 400px.
+- **Margin:** Auto (centered).
+
+#### `label` Styles
+- **Display:** Block.
+- **Margin Bottom:** 8px.
+
+#### `input` Styles
+- **Width:** 100%.
+- **Padding:** 10px.
+- **Margin Bottom:** 16px.
+- **Box Sizing:** Border-box.
+
+#### `button` Styles
+
+##### Base Button Styles
+- **Background Color:** Blue (`#3366cc`).
+- **Color:** White (`#fff`).
+- **Padding:** 10px 15px.
+- **Border:** None.
+- **Cursor:** Pointer.
+
+##### `button:hover` Styles
+- **Background Color:** Darker blue (`#254785`).
+
+#### `.invalid` Styles
+- **Border:** 2px solid red.
+
+#### `#bio`, `#new-bio`, `#edit-bio` Styles
+- **Max Width:** 400px.
+- **Margin:** Auto.
+- **Width:** 100%.
+- **Box Sizing:** Border-box.
+- **Padding:** 10px.
+
+#### `.user-list` Styles
+- **Display:** Flex.
+- **Flex Wrap:** Wrap.
+- **Justify Content:** Space-around.
+
+#### `.user` Styles
+- **Width:** 300px.
+- **Margin:** 20px.
+- **Padding:** 10px.
+- **Border:** 1px solid light gray (`#ddd`).
+- **Text Alignment:** Center.
+
+##### `.user img` Styles
+- **Width:** 100%.
+- **Max Height:** 150px.
+- **Object Fit:** Cover.
+- **Border Radius:** 50% (circular).
+- **Margin Bottom:** 10px.
+
+##### Button Styles (Additional)
+- **Background Color:** Blue (`#3366cc`).
+- **Color:** White (`#fff`).
+- **Padding:** 8px 12px.
+- **Margin Top:** 5px.
+
+##### `button:hover` Styles (Additional)
+- **Background Color:** Darker blue (`#254785`).
+
+
+### 3.2 Admin
 
 #### 3.2.1 indexadmin.html
 
