@@ -102,6 +102,68 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and the `script.js` JavaScript file.
 
 #### 3.1.2 information.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona informacyjna</title>
+    <meta name="description" content="Informacje o przeglądarce i użytkowniku">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Strona informacyjna</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article>
+            <p>Nazwa i wersja przeglądarki: Wersja 121.0.6167.86 (Oficjalna wersja) (64-bitowa)</p>
+            <p>Imię: Paweł</p>
+            <p>Nazwisko: Żurawski</p>
+            <p>Numer albumu: 371927</p>
+            <p>Nazwa przedmiotu: Podstawy technologii internetowych</p>
+            <p>Rok akademicki: 2023/2024.</p>
+        </article>
+        <article>
+            <div class="box">
+                <p>Specyfikacja Projektowa</p>
+                <a href="SpecyfikacjaProjektowaŻurawski.docx" download="SpecyfikacjaProjektowaŻurawski.docx">Pobierz specyfikację projektową</a>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Includes meta tags such as character encoding, viewport, page title, description, and author.
    - **Stylesheet Link:** Refers to the common stylesheet `common.css`.
@@ -136,6 +198,77 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and the `script.js` JavaScript file.
 
 #### 3.1.3 contact.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Kontakt</title>
+    <meta name="description" content="Skontaktuj się z nami, jeśli masz pytania lub uwagi dotyczące Tatr.">
+    <meta name="keywords" content="Tatry, kontakt, e-mail, telefon">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Kontakt</h1>
+        <p>Skontaktuj się z nami, jeśli masz pytania lub uwagi.</p>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article class="contact-info">
+            <h2>Nasz e-mail:</h2>
+            <p>kontakt@tatry.com</p>
+        </article>
+        <article class="contact-info">
+            <h2>Numer telefonu:</h2>
+            <p>123-456-789</p>
+        </article>
+
+        <article class="contact-form">
+            <h2>Napisz do nas</h2>
+            <form action="#" method="post">
+                <label for="email">Twój e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Twoja wiadomość:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Wyślij</button>
+            </form>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Includes meta tags such as character encoding, viewport, page title, description, and keywords.
    - **Stylesheet Link:** Refers to the common stylesheet `common.css`.
@@ -174,6 +307,141 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and the `script.js` JavaScript file.
 
 #### 3.1.4 table.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Najwyższe Szczyty</title>
+    <meta name="description" content="Lista najwyższych szczytów Polskich Tatr.">
+    <meta name="keywords" content="Tatry, szczyty, Polskie Tatry">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>10 Najwyższych Szczytów polskich Tatr</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Szczyt</th>
+                    <th>Wysokość (m n.p.m.)</th>
+                    <th>Czytaj więcej</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rysy</td>
+                    <td>2499</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Rysy" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mięguszowiecki Szczyt</td>
+                    <td>2438</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Mi%C4%99guszowiecki_Szczyt" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Niżnie Rysy</td>
+                    <td>2430</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Ni%C5%BCnie_Rysy" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mięguszowiecki Szczyt Czarny</td>
+                    <td>2410</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Mi%C4%99guszowiecki_Szczyt_Czarny" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mięguszowiecki Szczyt Pośredni</td>
+                    <td>2393</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Mi%C4%99guszowiecki_Szczyt_Po%C5%9Bredni" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cubryna</td>
+                    <td>2376</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Cubryna" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wołowa Turnia</td>
+                    <td>2373</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Wo%C5%82owa_Turnia" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hińczowa Turnia</td>
+                    <td>2372</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/Hi%C5%84czowa_Turnia" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Żabia Turnia Mięguszowiecka</td>
+                    <td>2336</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/%C5%BBabia_Turnia_Mi%C4%99guszowiecka" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Świnica</td>
+                    <td>2301</td>
+                    <td>
+                        <a href="https://pl.wikipedia.org/wiki/%C5%9Awinica" target="_blank" class="details-btn">&#10148;</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showDetails(szczyt) {
+            alert('Szczegóły dla szczytu: ' + szczyt);
+        }
+    </script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags such as character encoding, viewport, page title, description, and author.
    - **Stylesheet Link:** Refers to the common stylesheet `common.css`.
@@ -208,6 +476,76 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and JavaScript scripts from the `script.js` file, including inline functions.
 
 #### 3.1.5 posts.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Dyskusje</title>
+    <meta name="description" content="Dyskusje na temat Tatr.">
+    <meta name="keywords" content="Tatry, dyskusje, forum">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Forum</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div id="discussion-modal" class="discussion-modal" style="display: none;">
+            <div class="close-button" onclick="closeDiscussion()">×</div>
+            <div class="discussion-content" id="discussion-content">
+            </div>
+            <textarea id="new-comment" rows="2" placeholder="Dodaj nowy komentarz"></textarea>
+            <div class="comment-buttons">
+                <button onclick="addComment()">Dodaj komentarz</button>
+            </div>
+        </div>
+
+        <div class="discussion-topic" onclick="openDiscussion('discussion1')">
+            <h3>Wspinaczka poza szlakiem - odwaga czy szaleństwo?</h3>
+        </div>
+
+        <div class="discussion-topic" onclick="openDiscussion('discussion2')">
+            <h3>Zima w Tatrach - must have poniżej 0 st. Celsjusza!</h3>
+        </div>
+
+        <div class="discussion-topic" onclick="openDiscussion('discussion3')">
+            <h3>Darmowa pomoc TOPR - czy należy zmienić status quo?</h3>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags such as character encoding, viewport, page title, description, and author.
    - **Stylesheet Link:** Refers to the common stylesheet `common.css`.
@@ -243,6 +581,86 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and JavaScript scripts from the `script.js` file, including inline functions.
 
 #### 3.1.6 register.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <meta name="description" content="Rejestracja nowego użytkownika">
+    <meta name="keywords" content="rejestracja, użytkownik, formularz">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Rejestracja</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+    </nav>
+
+    <section class="main-content">
+        <form id="register-form">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Nazwisko:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Adres email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="photo">Zdjęcie:</label>
+            <input type="file" id="photo" name="photo">
+
+            <label for="bio">Sekcja "O mnie":</label>
+            <textarea id="bio" name="bio" required></textarea>
+
+            <label for="password">Nowe hasło:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Potwierdź nowe hasło:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Zarejestruj się</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags such as character encoding, viewport, page title, description, and author.
    - **Stylesheet Link:** Refers to the common stylesheet `common.css`.
@@ -282,6 +700,80 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - After filling out the form, users can submit it, and the data will be handled by JavaScript scripts.
 
 #### 3.1.7 login.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <meta name="description" content="Logowanie użytkownika">
+    <meta name="keywords" content="rejestracja, użytkownik, formularz">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="index.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Logowanie</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+    </nav>
+
+    <section class="main-content">
+        <form id="login-form" onsubmit="return login()">
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Zaloguj się</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === '' || password === '') {
+                alert('Wypełnij oba pola przed zalogowaniem.');
+                return false;
+            }
+
+            window.location.replace('indexadmin.html');
+            return false;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags such as character encoding, viewport, page title, description, and author.
    - **Stylesheet Link:** Refers to the common stylesheet `common.css`.
@@ -316,6 +808,65 @@ People interested in discussions about the Tatras, including climbers, tourists,
 ### 3.2 Backend
 
 #### 3.2.1 indexadmin.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Najwyższe Polskie Góry</title>
+    <meta name="description" content="Tatry - Najwyższe Polskie Góry. Odkryj piękno górskich krajobrazów.">
+    <meta name="keywords" content="Tatry, góry, szczyty, turystyka">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <header>
+        <h1>Witaj w świecie Tatr</h1>
+        <p>Odkryj piękno najwyższych gór Polski</p>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article>
+            <h2>Atrakcje Tatr</h2>
+            <p>Tatry to jedno z najpiękniejszych miejsc w Polsce. Oferują niesamowite widoki, liczne szlaki turystyczne, a także unikalną florę i faunę.</p>
+            <p>Zapraszamy do odkrywania piękna tych pięknych gór.</p>
+        </article>
+
+        <article>
+            <h2>Najwyższe Szczyty</h2>
+            <p>W Tatrach znajdują się liczne imponujące szczyty, takie jak Rysy czy Świnica. Każdy z nich ma swoje niepowtarzalne uroki i historię.</p>
+            <p>Przeżyj niezapomniane chwile na szlakach wśród majestatycznych szczytów.</p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags for character encoding, viewport, page title, description, keywords, and author.
    - **Stylesheet Link:** References the common stylesheet `common.css`.
@@ -345,6 +896,150 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The content is divided into "Tatras Attractions" and "Highest Peaks" sections with brief descriptions.
 
 #### 3.2.2 statistics.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statystyki</title>
+    <meta name="description" content="Statystyki strony">
+    <meta name="keywords" content="statystyki, odwiedziny, użytkownicy, posty">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Statystyki serwisu</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="statistics-container">
+            <canvas id="dailyVisitsChart"></canvas>
+            <canvas id="userActivityChart"></canvas>
+            <canvas id="userStatsChart"></canvas>
+            <canvas id="postStatsChart"></canvas>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        var dailyVisitsData = [50, 120, 80, 150, 100, 200, 120];
+        var userActivityData = [20, 40, 30, 60, 45, 80, 55];
+        var userStatsData = [100, 150, 200, 180, 220, 250, 210];
+        var postStatsData = [10, 15, 8, 12, 20, 18, 14];
+
+        var dailyVisitsChart = new Chart(document.getElementById('dailyVisitsChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Dzienna liczba odwiedzin',
+                    data: dailyVisitsData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var userActivityChart = new Chart(document.getElementById('userActivityChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Aktywność użytkowników',
+                    data: userActivityData,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var userStatsChart = new Chart(document.getElementById('userStatsChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Liczba użytkowników',
+                    data: userStatsData,
+                    backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                    borderColor: 'rgba(255, 206, 86, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var postStatsChart = new Chart(document.getElementById('postStatsChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob', 'Niedz'],
+                datasets: [{
+                    label: 'Liczba postów',
+                    data: postStatsData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags for character encoding, viewport, page title, description, keywords, and author.
    - **Stylesheet Link:** References the common stylesheet `common.css`.
@@ -375,6 +1070,85 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - Utilizes the Chart.js library to generate charts based on provided data.
 
 #### 3.2.3 useradmin.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edycja Profilu Użytkownika</title>
+    <meta name="description" content="Edycja profilu użytkownika">
+    <meta name="keywords" content="profil, użytkownik, edycja">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Edycja Profilu Użytkownika</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <form id="edit-profile-form" enctype="multipart/form-data">
+            <label for="new-name">Nowe Imię:</label>
+            <input type="text" id="new-name" name="new-name" required>
+
+            <label for="new-surname">Nowe nazwisko:</label>
+            <input type="text" id="new-surname" name="new-surname" required>
+
+            <label for="new-username">Nowa nazwa użytkownika:</label>
+            <input type="text" id="new-username" name="new-username" required>
+
+            <label for="new-email">Nowy adres email:</label>
+            <input type="email" id="new-email" name="new-email" required>
+
+            <label for="new-phone">Nowy telefon:</label>
+            <input type="tel" id="new-phone" name="new-phone" required>
+
+            <label for="new-photo">Nowe zdjęcie:</label>
+            <input type="file" id="new-photo" name="new-photo">
+
+            <label for="new-bio">Nowa sekcja "O mnie":</label>
+            <textarea id="new-bio" name="new-bio" required></textarea>
+
+            <label for="new-password">Nowe hasło:</label>
+            <input type="password" id="new-password" name="new-password" required>
+
+            <label for="confirm-new-password">Potwierdź nowe hasło:</label>
+            <input type="password" id="confirm-new-password" name="confirm-new-password" required>
+
+            <button type="submit">Zapisz zmiany</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags for character encoding, viewport, page title, description, keywords, and author.
    - **Stylesheet Link:** References the common stylesheet `common.css`.
@@ -404,6 +1178,112 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - Utilizes JavaScript for additional functionality, implemented in the `script.js` file.
 
 #### 3.2.4 usersadmin.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracja</title>
+    <meta name="description" content="Administracja użytkownikami">
+    <meta name="keywords" content="użytkownicy, edycja, usuwanie">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="usersadmin.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Administracja</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="user-list">
+            <div class="user" id="user-1">
+                <h3>MountainExplorer</h3>
+                <p>Email: user1@example.com</p>
+                <p>Telefon: 123-456-789</p>
+                <button onclick="editUser(1)">Edytuj</button>
+                <button onclick="deleteUser(1)">Usuń</button>
+            </div>
+
+            <div class="user" id="user-2">
+                <h3>WinterAdventurer</h3>
+                <p>Email: user2@example.com</p>
+                <p>Telefon: 987-654-321</p>
+                <button onclick="editUser(2)">Edytuj</button>
+                <button onclick="deleteUser(2)">Usuń</button>
+            </div>
+
+            <div class="user" id="user-3">
+                <h3>RescueSupporter</h3>
+                <p>Email: user3@example.com</p>
+                <p>Telefon: 231-421-022</p>
+                <button onclick="editUser(3)">Edytuj</button>
+                <button onclick="deleteUser(3)">Usuń</button>
+            </div>
+        </div>
+
+        <div id="editUserModal" class="modal">
+            <div class="modal-content">
+                <h2>Edytuj użytkownika</h2>
+                <form id="edit-user-form">
+                    <label for="edit-name">Nowe Imię:</label>
+                    <input type="text" id="edit-name" name="edit-name" required>
+    
+                    <label for="edit-surname">Nowe Nazwisko:</label>
+                    <input type="text" id="edit-surname" name="edit-surname" required>
+    
+                    <label for="edit-email">Nowy Adres email:</label>
+                    <input type="email" id="edit-email" name="edit-email" required>
+    
+                    <label for="edit-phone">Nowy Telefon:</label>
+                    <input type="tel" id="edit-phone" name="edit-phone" required>
+    
+                    <label for="edit-photo">Nowe Zdjęcie (URL):</label>
+                    <input type="text" id="edit-photo" name="edit-photo" required>
+    
+                    <label for="edit-bio">Nowa sekcja "O mnie":</label>
+                    <textarea id="edit-bio" name="edit-bio" required></textarea>
+    
+                    <div class="modal-buttons">
+                        <button type="button" onclick="saveEditUser()">Zapisz</button>
+                        <button type="button" onclick="closeEditUserModal()">Anuluj</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="usersadmin.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags for character encoding, viewport, page title, description, keywords, and author.
    - **Stylesheet Links:** References `common.css` and `usersadmin.css`.
@@ -436,6 +1316,65 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - Features a sidebar navigation menu and footer with copyright information.
 
 #### 3.2.5 contactadmin.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edycja Kontaktu</title>
+    <meta name="description" content="Edycja danych kontaktowych">
+    <meta name="keywords" content="kontakt, edycja, email, telefon">
+    <meta name="author" content="Twoje Imię">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Edycja Kontaktu</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <form id="edit-contact-form">
+            <label for="new-email">Nowy Adres Email:</label>
+            <input type="email" id="new-email" name="new-email" required>
+
+            <label for="new-phone">Nowy Numer Telefonu:</label>
+            <input type="tel" id="new-phone" name="new-phone" required>
+
+            <button type="submit">Zapisz zmiany</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Twoja Nazwa. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contactadmin.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags for character encoding, viewport, page title, description, keywords, and author.
    - **Stylesheet Links:** References `common.css` and `contactadmin.css`.
@@ -465,6 +1404,82 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - Features a sidebar navigation menu and footer with copyright information.
 
 #### 3.2.6 postsadmin.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracja Dyskusjami</title>
+    <meta name="description" content="Administracja dyskusjami na temat Tatr.">
+    <meta name="keywords" content="Tatry, dyskusje, forum, administracja">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <a href="indexadmin.html" class="home-icon">&#127968;</a>
+
+    <header>
+        <h1>Administracja Dyskusjami</h1>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="postsadmin.html">Ogłoszenia</a></li>
+            <li><a href="contactadmin.html">Kontakt</a></li>
+            <li><a href="usersadmin.html">Użytkownicy</a></li>
+            <li><a href="useradmin.html">Edycja profilu</a></li>
+            <li><a href="statistics.html">Statystyki</a></li>
+            <li><a href="index.html">Wyloguj</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="discussion-topic" id="discussion-1">
+            <h3>Wspinaczka poza szlakiem - odwaga czy szaleństwo?</h3>
+            <button class="edit-button" onclick="editDiscussion(1)">Zarządzaj komentarzami dyskusji</button>
+            <button class="delete-button" onclick="deleteDiscussion(1)">Usuń dyskusję</button>
+        </div>
+    
+        <div class="discussion-topic" id="discussion-2">
+            <h3>Zima w Tatrach - must have poniżej 0 st. Celsjusza!</h3>
+            <button class="edit-button" onclick="editDiscussion(2)">Zarządzaj komentarzami dyskusji</button>
+            <button class="delete-button" onclick="deleteDiscussion(2)">Usuń dyskusję</button>
+        </div>
+    
+        <div class="discussion-topic" id="discussion-3">
+            <h3>Darmowa pomoc TOPR - czy należy zmienić status quo?</h3>
+            <button class="edit-button" onclick="editDiscussion(3)">Zarządzaj komentarzami dyskusji</button>
+            <button class="delete-button" onclick="deleteDiscussion(3)">Usuń dyskusję</button>
+        </div>
+    </section>
+    
+    <div id="discussion-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Edytuj dyskusję</h2>
+            <div id="discussion-content"></div>
+            <div class="comment-buttons">
+                <button onclick="deleteComment()">Usuń komentarz</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Contains meta tags for character encoding, viewport, page title, description, keywords, and author.
    - **Stylesheet Link:** References the stylesheet `common.css`.
