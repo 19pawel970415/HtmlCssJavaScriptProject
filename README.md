@@ -2052,6 +2052,8 @@ button:hover {
 - Transition effects and color changes are used for interactivity.
 - Styling for forms, buttons, tables, comments, modals, and other elements.
 
+### script.js
+
 ```js
 function toggleSidebar() {
     var sidebar = document.querySelector('.sidebar');
