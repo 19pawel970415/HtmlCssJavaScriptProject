@@ -3,7 +3,7 @@
 # Tatrofan - a Tatras fan site
 
 ## 1. Project Objective
-Create an interactive website for discovering interesting facts and participating in discussions about the Tatras on the user side, and for viewing site statistics, and managing users, contact data, and discussions on the admin side.
+Creating an interactive website for discovering interesting facts and participating in discussions about the Tatras on the user side, and for viewing site statistics, and managing users, contact data, and discussions on the admin side.
 
 ## 2. Target Audience
 People interested in discussions about the Tatras, including climbers, tourists, and mountain enthusiasts.
