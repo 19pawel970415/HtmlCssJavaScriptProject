@@ -13,6 +13,65 @@ People interested in discussions about the Tatras, including climbers, tourists,
 ### 3.1 Frontend
 
 #### 3.1.1 index.html
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry - Najwyższe Polskie Góry</title>
+    <meta name="description" content="Tatry - Najwyższe Polskie Góry. Odkryj piękno górskich krajobrazów.">
+    <meta name="keywords" content="Tatry, góry, szczyty, turystyka">
+    <meta name="author" content="Paweł Żurawski">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+
+<body>
+    <img src="mainFoto.jpg" alt="Główne zdjęcie" class="main-photo">
+
+    <header>
+        <h1>Witaj w świecie Tatr</h1>
+        <p>Odkryj piękno najwyższych gór Polski</p>
+    </header>
+
+    <nav class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        <ul>
+            <li><a href="login.html">Zaloguj się</a></li>
+            <li><a href="register.html">Zarejestruj się</a></li>
+            <li><a href="posts.html">Ogłoszenia</a></li>
+            <li><a href="table.html">Najwyższe szczyty</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="information.html">Strona informacyjna</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article>
+            <h2>Atrakcje Tatr</h2>
+            <p>Tatry to jedno z najpiękniejszych miejsc w Polsce. Oferują niesamowite widoki, liczne szlaki turystyczne, a także unikalną florę i faunę.</p>
+            <p>Zapraszamy do odkrywania piękna tych pięknych gór.</p>
+        </article>
+
+        <article>
+            <h2>Najwyższe Szczyty</h2>
+            <p>W Tatrach znajdują się liczne imponujące szczyty, takie jak Rysy czy Świnica. Każdy z nich ma swoje niepowtarzalne uroki i historię.</p>
+            <p>Przeżyj niezapomniane chwile na szlakach wśród majestatycznych szczytów.</p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tatrofan. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 1. **<head> Section:**
    - **Meta Tags:** Includes meta tags such as character encoding, viewport, page title, description, and keywords.
    - **Stylesheet Link:** Refers to the common stylesheet `common.css`.
