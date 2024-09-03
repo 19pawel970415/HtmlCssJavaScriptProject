@@ -2320,8 +2320,8 @@ These functions provide core functionalities for managing sidebar, user profiles
 - **Author:** Paweł Żurawski
 
 ## 9. Specification Creation Date
-- **Date:** January 30, 2024
+- **Date:** January 30th, 2024
 
 ## 10. Last Updated Date
-- **Date:** January 30, 2024
+- **Date:** September 3rd, 2024
 
