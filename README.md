@@ -14,6 +14,9 @@ People interested in discussions about the Tatras, including climbers, tourists,
 
 #### 3.1.1 index.html
 
+![image](https://github.com/user-attachments/assets/da33b560-5b0b-4c78-8bf1-8f9e0d61b43f)
+
+
 ```html
 <!DOCTYPE html>
 <html lang="pl">
@@ -102,6 +105,9 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and the `script.js` JavaScript file.
 
 #### 3.1.2 information.html
+
+![image](https://github.com/user-attachments/assets/63a3ae37-a6f7-4c2a-9e4f-35ab92be8717)
+
 
 ```html
 <!DOCTYPE html>
@@ -198,6 +204,11 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and the `script.js` JavaScript file.
 
 #### 3.1.3 contact.html
+
+![image](https://github.com/user-attachments/assets/27209ab9-37c7-4988-beb8-522ec3345185)
+
+![image](https://github.com/user-attachments/assets/afa1d86f-c243-4d5b-aab6-209fcd3db1cf)
+
 
 ```html
 <!DOCTYPE html>
@@ -307,6 +318,8 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and the `script.js` JavaScript file.
 
 #### 3.1.4 table.html
+
+![image](https://github.com/user-attachments/assets/1aa78a41-02a0-4c56-b479-a8b5771543b1)
 
 ```html
 <!DOCTYPE html>
@@ -477,6 +490,15 @@ People interested in discussions about the Tatras, including climbers, tourists,
 
 #### 3.1.5 posts.html
 
+![image](https://github.com/user-attachments/assets/1d6000c4-7078-4c3a-a187-a85f60567fd3)
+
+![image](https://github.com/user-attachments/assets/804a4213-7236-4852-a646-8b5b7e8756c2)
+
+![image](https://github.com/user-attachments/assets/09fed1ea-ab06-4d2c-a7e8-19201d5de9db)
+
+![image](https://github.com/user-attachments/assets/7e1f2630-e94a-4397-a1c7-48daa4e064b2)
+
+
 ```html
 <!DOCTYPE html>
 <html lang="pl">
@@ -581,6 +603,10 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The page uses the `common.css` stylesheet and JavaScript scripts from the `script.js` file, including inline functions.
 
 #### 3.1.6 register.html
+
+![image](https://github.com/user-attachments/assets/e3fe42f5-f593-422e-9b88-f254eb616800)
+
+![image](https://github.com/user-attachments/assets/b5a7c3d2-be2c-4124-a1f0-91d3e4466863)
 
 ```html
 <!DOCTYPE html>
@@ -701,6 +727,8 @@ People interested in discussions about the Tatras, including climbers, tourists,
 
 #### 3.1.7 login.html
 
+![image](https://github.com/user-attachments/assets/b11cb0dd-c3b5-4d04-8d81-2a4f66e6aa47)
+
 ```html
 <!DOCTYPE html>
 <html lang="pl">
@@ -809,6 +837,8 @@ People interested in discussions about the Tatras, including climbers, tourists,
 
 #### 3.2.1 indexadmin.html
 
+![image](https://github.com/user-attachments/assets/fe02f1e3-b190-4ac4-92b6-c1add31950e7)
+
 ```html
 <!DOCTYPE html>
 <html lang="pl">
@@ -896,6 +926,25 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - The content is divided into "Tatras Attractions" and "Highest Peaks" sections with brief descriptions.
 
 #### 3.2.2 statistics.html
+
+![image](https://github.com/user-attachments/assets/96feb03c-0a13-4d23-a284-18512b0fa185)
+
+![image](https://github.com/user-attachments/assets/5f80a461-ab48-4f35-ad47-2240ebfba499)
+
+![image](https://github.com/user-attachments/assets/a1305209-b26a-4fdb-9ac9-6cf7f41c145a)
+
+![image](https://github.com/user-attachments/assets/f33a81fe-405f-4895-a1b9-ade734187fdf)
+
+![image](https://github.com/user-attachments/assets/df338e0c-0feb-47c4-b2ab-7d37fe22f681)
+
+![image](https://github.com/user-attachments/assets/2111ebff-87f3-4184-9d0d-a26a0eb6a107)
+
+![image](https://github.com/user-attachments/assets/2f26a160-cf14-4741-8180-8268f8ae3f64)
+
+![image](https://github.com/user-attachments/assets/e8afa0fd-90e3-4bdf-ad3e-fd780054057c)
+
+![image](https://github.com/user-attachments/assets/68d04df2-f06e-4f39-a294-cbc851cde9f5)
+
 
 ```html
 <!DOCTYPE html>
@@ -1071,6 +1120,11 @@ People interested in discussions about the Tatras, including climbers, tourists,
 
 #### 3.2.3 useradmin.html
 
+![image](https://github.com/user-attachments/assets/8245a70d-c128-4547-9d71-3c840fc93c33)
+
+![image](https://github.com/user-attachments/assets/0e4a760d-350a-44c5-bca3-c831871289fa)
+
+
 ```html
 <!DOCTYPE html>
 <html lang="pl">
@@ -1178,6 +1232,15 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - Utilizes JavaScript for additional functionality, implemented in the `script.js` file.
 
 #### 3.2.4 usersadmin.html
+
+![image](https://github.com/user-attachments/assets/3e4bb153-7d6a-4fc5-a7ce-32c4fe8100f0)
+
+![image](https://github.com/user-attachments/assets/03b0a80a-e32c-4137-9c98-9b8e14931daa)
+
+![image](https://github.com/user-attachments/assets/5d28814b-8314-42e4-bd12-2d9edffeac3c)
+
+![image](https://github.com/user-attachments/assets/804ff45e-034b-425e-a4e6-7aedd6045fc3)
+
 
 ```html
 <!DOCTYPE html>
@@ -1317,6 +1380,8 @@ People interested in discussions about the Tatras, including climbers, tourists,
 
 #### 3.2.5 contactadmin.html
 
+![image](https://github.com/user-attachments/assets/32ed1b3a-af7b-486c-a994-2e07f43f5d22)
+
 ```html
 <!DOCTYPE html>
 <html lang="pl">
@@ -1404,6 +1469,19 @@ People interested in discussions about the Tatras, including climbers, tourists,
 - Features a sidebar navigation menu and footer with copyright information.
 
 #### 3.2.6 postsadmin.html
+
+![image](https://github.com/user-attachments/assets/3065c410-176c-4ed6-9e9e-e94dc6b9689e)
+
+![image](https://github.com/user-attachments/assets/944b1f77-f207-4d41-a5e5-8aa1936cb750)
+
+![image](https://github.com/user-attachments/assets/380cdbd9-dbab-4147-af73-339341782abc)
+
+![image](https://github.com/user-attachments/assets/50f199fd-9ab5-4ba9-8ca8-902ce27f4f70)
+
+![image](https://github.com/user-attachments/assets/de3f8ea0-00bd-494b-94bd-24157f43eaaa)
+
+![image](https://github.com/user-attachments/assets/709a73bf-3698-47d1-a44b-e01ddab91010)
+
 
 ```html
 <!DOCTYPE html>
