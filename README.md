@@ -1,4 +1,4 @@
-﻿# A front end project of Tatrofan, a Tatras fan site being a part of the University of Lodz Frontend Technologies course.
+﻿A front end project of Tatrofan, a Tatras fan site being a part of the University of Lodz "Frontend Technologies" course.
 
 # Tatrofan - a Tatras fan site
 
